@@ -1198,7 +1198,7 @@ async function submitSession() {
       body: JSON.stringify({
         chat_id: CHAT_ID,
         text: summary,
-        parse_mode: 'Markdown'
+        // no parse_mode
       })
     });
     const result = await resp.json();
