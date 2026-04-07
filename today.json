@@ -1,73 +1,72 @@
 {
-  "session_id": "2026-04-07-4144",
-  "date": "2026-04-07",
-  "generated_at": "2026-04-07T21:57:11.084370",
+  "session_id": "2026-04-08-2559",
+  "date": "2026-04-08",
+  "generated_at": "2026-04-07T21:58:18.653469",
   "questions": [
     {
-      "id": "decision-0001",
-      "type": "decision_review",
-      "category": "Rally (Padel) \u00b7 Decision Quality",
-      "emoji": "\ud83e\udde0",
-      "prompt": "Rally (Padel) made this decision (2026-04-06):",
-      "excerpt": "**What worked well today**\n\n1. **Cron chase handling was clean.** The Monday reminder response was structured, actionable, and hit all live items without fluff. The offer to draft the Karl send message was the right move.\n\n2. **Research planning was solid.** The four-phase breakdown for the Australian padel venue research was ",
-      "question": "Was this the right call? Did Rally (Padel) handle it correctly?",
-      "scale": "1\u201310 \u00b7 Wrong call \u2192 Perfect call",
-      "hint": "What should it have done instead? (optional)",
-      "number": 1
-    },
-    {
-      "id": "action-0002",
-      "type": "felix_review",
-      "category": "Home \u00b7 Response Quality",
+      "id": "resp-main-0",
+      "number": 1,
+      "type": "response_review",
+      "category": "Felix \u00b7 Response",
       "emoji": "\ud83e\udd16",
-      "prompt": "Home said this on 2026-04-05:",
-      "excerpt": "Not necessarily \u2014 depends on the size of the lamb piece vs the chicken breast. But if they're similar thickness/weight, lamb to 50\u00b0C and chicken to 74\u00b0C are very different targets, so the chicken will take noticeably longer than the lamb.\n\nRough guide: once your lamb hits 50\u00b0C and you pull it, the chicken probably needs another 10\u201315 min on top of that (assuming similar size pieces).\n\nBest move \u2014 ",
-      "question": "How well did Home handle this? Accurate, useful, right tone?",
-      "scale": "1\u201310 \u00b7 Way off \u2192 Perfect",
-      "hint": "What should it have done differently? (optional)",
-      "number": 2
+      "prompt": "Here's what Felix said on 2026-04-07:",
+      "excerpt": "That's Felix alerting you about an Atlas cron failure. It shouldn't be \u2014 HEARTBEAT.md explicitly says Atlas jobs are exempt from Felix's failure alerting (Atlas has its own). That alert came from somewhere else.\n\nLet me check where it originated and fix it.",
+      "question": "Rate this response: was it accurate, direct, and useful?",
+      "scale": "1\u201310 \u00b7 Wrong/unhelpful \u2192 Perfect",
+      "hint": "What was off? (optional)"
     },
     {
-      "id": "voice-001",
+      "id": "resp-rally-1",
+      "number": 2,
+      "type": "response_review",
+      "category": "Rally \u00b7 Response",
+      "emoji": "\ud83e\udd16",
+      "prompt": "Here's what Rally said on 2026-04-06:",
+      "excerpt": "Wednesday 11am reminder set.\n\nOn the pickleball data \u2014 you're right to question it. The low numbers (6\u201310% for HoP) aren't actual utilisation of the courts. HoP uses an event-based booking system (Podplay), so the tracker measures waitlisted sessions as a proxy \u2014 it's not slot-based. A session showing 6% means 6% of sessions have a waitlist, not that 6% of courts are booked.\n\nThe padel and tennis numbers are slot-based (from Playtomic), so they're comparable. The pickleball numbers are a complet",
+      "question": "Rate this response: was it accurate, direct, and useful?",
+      "scale": "1\u201310 \u00b7 Wrong/unhelpful \u2192 Perfect",
+      "hint": "What was off? (optional)"
+    },
+    {
+      "id": "resp-haven-2",
+      "number": 3,
+      "type": "response_review",
+      "category": "Haven \u00b7 Response",
+      "emoji": "\ud83e\udd16",
+      "prompt": "Here's what Haven said on 2026-04-06:",
+      "excerpt": "\u26a0\ufe0f Haven form watcher failed - Google token expired for joel@joelditrapani.com (HTTP 400 on token refresh). The form watcher can't read the Google Sheet until the token is renewed. To fix: re-run the Google auth flow for the joel account on Felix.",
+      "question": "Rate this response: was it accurate, direct, and useful?",
+      "scale": "1\u201310 \u00b7 Wrong/unhelpful \u2192 Perfect",
+      "hint": "What was off? (optional)"
+    },
+    {
+      "id": "voice-check",
+      "number": 4,
       "type": "voice_calibration",
       "category": "Voice & Tone",
       "emoji": "\u270d\ufe0f",
-      "prompt": "General check-in:",
+      "prompt": "Last 24 hours overall:",
       "excerpt": null,
-      "question": "In the last day, did Felix sound like you? Or did it drift into AI-speak?",
-      "scale": "1\u201310 \u00b7 Sounded like a bot \u2192 Nailed your voice",
-      "hint": "Specific phrases or moments where it was off (optional)",
-      "number": 3
+      "question": "Did the agents sound like extensions of you, or did they drift into AI-speak?",
+      "scale": "1\u201310 \u00b7 AI-speak \u2192 Your voice",
+      "hint": "Specific phrase or moment that was off (optional)"
     },
     {
-      "id": "proactive-002",
+      "id": "proactive-check",
+      "number": 5,
       "type": "proactive_check",
-      "category": "Proactive Intelligence",
+      "category": "Felix \u00b7 Proactivity",
       "emoji": "\u26a1",
-      "prompt": "Context awareness:",
-      "excerpt": null,
-      "question": "Did Felix connect the dots between things \u2014 or treat each conversation in isolation?",
-      "scale": "1\u201310 \u00b7 Zero context \u2192 Fully connected",
-      "hint": "Example of where it should have connected the dots (optional)",
-      "number": 4
-    },
-    {
-      "id": "decision-0000",
-      "type": "decision_review",
-      "category": "Felix \u00b7 Decision Quality",
-      "emoji": "\ud83e\udde0",
-      "prompt": "Felix made this decision (2026-04-08):",
-      "excerpt": "**8-Week Felix Improvement Plan (2hrs/day)**\n\n- Week 1: Deep user modeling (Joel's decision patterns, communication fingerprint)\n- Week 2: Memory architecture upgrade (tiered semantic memory)\n- Week 3: Writing and voice calibration (Joel's voice, 15 email samples needed)\n- Week 4: Proactive intelligence layer\n- Week 5: Proactivity and anticipat",
-      "question": "Was this the right call? Did Felix handle it correctly?",
-      "scale": "1\u201310 \u00b7 Wrong call \u2192 Perfect call",
-      "hint": "What should it have done instead? (optional)",
-      "number": 5
+      "prompt": "Felix flagged this on 2026-04-07:",
+      "excerpt": "The file already has comprehensive entries for today. Let me check if there's anything new from this session to append.\n\nThe session covered:\n1. Atlas was down (OpenClaw inactive, `providers` key config error) - fixed via `openclaw doctor --fix`\n2. Atlas Tailscale IP (100.80.61.61) was unreachable; used direct IP (45.76.127.205) to diagnose\n3. `atlas-ops-health` cron at 3 consecutive errors due to",
+      "question": "Did Felix surface this at the right time? Should it have flagged this earlier, or differently?",
+      "scale": "1\u201310 \u00b7 Too late/wrong \u2192 Exactly right",
+      "hint": "What should it have done instead? (optional)"
     }
   ],
   "responses": {},
   "submitted": false,
   "stats": {
-    "actions_pulled": 1143,
-    "decisions_pulled": 92
+    "actions_pulled": 1199
   }
 }
