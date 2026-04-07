@@ -867,10 +867,10 @@ function tgInit() {
 }
 
 // ── INIT ──────────────────────────────────────────────────────────────────
-function init() {
+async function init() {
   tgInit();
 
-  // Try to restore session
+  // Try to restore today's local session
   const saved = localStorage.getItem(SESSION_KEY);
   if (saved) {
     try {
@@ -883,7 +883,26 @@ function init() {
     } catch(e) {}
   }
 
-  // Generate fresh session
+  // Try to load today's real session from server
+  try {
+    const resp = await fetch(
+      `https://felix-server.tailc08f7a.ts.net/files/betterai/training/today.json?t=${Date.now()}`,
+      { mode: 'cors', cache: 'no-store' }
+    );
+    if (resp.ok) {
+      const session = await resp.json();
+      if (session.date === state.date && session.questions?.length > 0) {
+        state.sessionId = session.session_id;
+        state.questions = session.questions.map((q,i) => ({...q, number: i+1}));
+        state.responses = {};
+        saveState();
+        render();
+        return;
+      }
+    }
+  } catch(e) { /* offline or tailscale not available — use local questions */ }
+
+  // Fallback: generate from local pool
   generateSession(5);
 }
 
