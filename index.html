@@ -1152,7 +1152,7 @@ async function submitSession() {
 
   // POST to betterAI API endpoint
   try {
-    const resp = await fetch('/api/training/submit', {
+    const resp = await fetch('https://108-61-213-152.sslip.io:8443/api/training/submit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload)
