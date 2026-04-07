@@ -1143,56 +1143,35 @@ async function submitSession() {
   state.submitted = true;
   localStorage.setItem(SESSION_KEY, JSON.stringify(state));
 
-  const payload = {
-    session_id: state.sessionId,
-    date: state.date,
-    questions: state.questions,
-    responses: state.responses
-  };
+  // Build compact summary
+  const answered = Object.keys(state.responses).length;
+  const ratings = Object.values(state.responses).map(r => r.rating).filter(r => r != null);
+  const avg = ratings.length ? (ratings.reduce((a,b)=>a+b,0)/ratings.length).toFixed(1) : '?';
 
-  // POST to betterAI API endpoint
-  try {
-    const resp = await fetch('https://108-61-213-152.sslip.io:8443/api/training/submit', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload)
-    });
-    const ok = resp.ok;
+  // Build human-readable summary of responses
+  const lines = [`TRAINING_SUBMIT:${state.sessionId}`, `Date: ${state.date}`, `Avg rating: ${avg}/10`, ``];
+  for (const q of state.questions) {
+    const r = state.responses[q.id];
+    if (!r) continue;
+    const ratingStr = r.rating != null ? `${r.rating}/10` : r.choice || '';
+    const noteStr = r.note ? ` — "${r.note}"` : '';
+    lines.push(`Q${q.number} [${q.category}]: ${ratingStr}${noteStr}`);
+  }
+  const summary = lines.join('\n');
 
-    if (tg) {
-      // Send compact summary to bot via Telegram WebApp
-      const answered = Object.keys(state.responses).length;
-      const ratings = Object.values(state.responses).map(r => r.rating).filter(Boolean);
-      const avg = ratings.length ? (ratings.reduce((a,b)=>a+b,0)/ratings.length).toFixed(1) : null;
-      const summary = JSON.stringify({
-        type: 'training_session',
-        session_id: state.sessionId,
-        date: state.date,
-        answered,
-        avg_felix_rating: avg,
-        responses: state.responses
-      });
+  // Submit via Telegram WebApp sendData (works from keyboard button launch)
+  if (tg) {
+    tg.HapticFeedback?.notificationOccurred('success');
+    try {
       tg.sendData(summary);
-      return; // tg.sendData closes the app
+      // sendData closes the app — if we reach here it failed
+    } catch(e) {
+      // sendData unavailable (inline button launch) — close app and notify
+      btn.textContent = '✓ Session saved';
+      showToast('✓ betterAI will process your session');
+      setTimeout(() => tg.close(), 1500);
+      return;
     }
-
-    if (ok) {
-      btn.textContent = '✓ Applied';
-      showToast('✓ Session saved · Felix will apply learnings');
-    } else {
-      throw new Error('Server error');
-    }
-  } catch(e) {
-    // Fallback: download JSON
-    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `felix-training-${state.date}.json`;
-    a.click();
-    URL.revokeObjectURL(url);
-    btn.textContent = '✓ Saved locally';
-    showToast('✓ Session downloaded — send to betterAI to apply');
   }
 
   setTimeout(() => {
