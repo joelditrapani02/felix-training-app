@@ -886,7 +886,7 @@ async function init() {
   // Try to load today's real session from server
   try {
     const resp = await fetch(
-      `https://felix-server.tailc08f7a.ts.net/files/betterai/training/today.json?t=${Date.now()}`,
+      `./today.json?t=${Date.now()}`,
       { mode: 'cors', cache: 'no-store' }
     );
     if (resp.ok) {

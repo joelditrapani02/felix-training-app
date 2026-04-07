@@ -1,0 +1,73 @@
+{
+  "session_id": "2026-04-07-4144",
+  "date": "2026-04-07",
+  "generated_at": "2026-04-07T21:57:11.084370",
+  "questions": [
+    {
+      "id": "decision-0001",
+      "type": "decision_review",
+      "category": "Rally (Padel) \u00b7 Decision Quality",
+      "emoji": "\ud83e\udde0",
+      "prompt": "Rally (Padel) made this decision (2026-04-06):",
+      "excerpt": "**What worked well today**\n\n1. **Cron chase handling was clean.** The Monday reminder response was structured, actionable, and hit all live items without fluff. The offer to draft the Karl send message was the right move.\n\n2. **Research planning was solid.** The four-phase breakdown for the Australian padel venue research was ",
+      "question": "Was this the right call? Did Rally (Padel) handle it correctly?",
+      "scale": "1\u201310 \u00b7 Wrong call \u2192 Perfect call",
+      "hint": "What should it have done instead? (optional)",
+      "number": 1
+    },
+    {
+      "id": "action-0002",
+      "type": "felix_review",
+      "category": "Home \u00b7 Response Quality",
+      "emoji": "\ud83e\udd16",
+      "prompt": "Home said this on 2026-04-05:",
+      "excerpt": "Not necessarily \u2014 depends on the size of the lamb piece vs the chicken breast. But if they're similar thickness/weight, lamb to 50\u00b0C and chicken to 74\u00b0C are very different targets, so the chicken will take noticeably longer than the lamb.\n\nRough guide: once your lamb hits 50\u00b0C and you pull it, the chicken probably needs another 10\u201315 min on top of that (assuming similar size pieces).\n\nBest move \u2014 ",
+      "question": "How well did Home handle this? Accurate, useful, right tone?",
+      "scale": "1\u201310 \u00b7 Way off \u2192 Perfect",
+      "hint": "What should it have done differently? (optional)",
+      "number": 2
+    },
+    {
+      "id": "voice-001",
+      "type": "voice_calibration",
+      "category": "Voice & Tone",
+      "emoji": "\u270d\ufe0f",
+      "prompt": "General check-in:",
+      "excerpt": null,
+      "question": "In the last day, did Felix sound like you? Or did it drift into AI-speak?",
+      "scale": "1\u201310 \u00b7 Sounded like a bot \u2192 Nailed your voice",
+      "hint": "Specific phrases or moments where it was off (optional)",
+      "number": 3
+    },
+    {
+      "id": "proactive-002",
+      "type": "proactive_check",
+      "category": "Proactive Intelligence",
+      "emoji": "\u26a1",
+      "prompt": "Context awareness:",
+      "excerpt": null,
+      "question": "Did Felix connect the dots between things \u2014 or treat each conversation in isolation?",
+      "scale": "1\u201310 \u00b7 Zero context \u2192 Fully connected",
+      "hint": "Example of where it should have connected the dots (optional)",
+      "number": 4
+    },
+    {
+      "id": "decision-0000",
+      "type": "decision_review",
+      "category": "Felix \u00b7 Decision Quality",
+      "emoji": "\ud83e\udde0",
+      "prompt": "Felix made this decision (2026-04-08):",
+      "excerpt": "**8-Week Felix Improvement Plan (2hrs/day)**\n\n- Week 1: Deep user modeling (Joel's decision patterns, communication fingerprint)\n- Week 2: Memory architecture upgrade (tiered semantic memory)\n- Week 3: Writing and voice calibration (Joel's voice, 15 email samples needed)\n- Week 4: Proactive intelligence layer\n- Week 5: Proactivity and anticipat",
+      "question": "Was this the right call? Did Felix handle it correctly?",
+      "scale": "1\u201310 \u00b7 Wrong call \u2192 Perfect call",
+      "hint": "What should it have done instead? (optional)",
+      "number": 5
+    }
+  ],
+  "responses": {},
+  "submitted": false,
+  "stats": {
+    "actions_pulled": 1143,
+    "decisions_pulled": 92
+  }
+}
