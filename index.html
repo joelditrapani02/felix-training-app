@@ -886,12 +886,12 @@ function showCompletion() {
   ];
   document.getElementById('completionSub').textContent = subs[Math.floor(Math.random() * subs.length)];
 
-  // Show Telegram main button as primary CTA
-  if (tg) {
-    tg.MainButton.setText('Apply to Felix →');
-    tg.MainButton.show();
-    // Hide the in-page button since Telegram button takes over
-    document.getElementById('btnSubmit').style.display = 'none';
+  // Show submit button prominently
+  const submitBtn = document.getElementById('btnSubmit');
+  if (submitBtn) {
+    submitBtn.style.display = 'block';
+    submitBtn.textContent = 'Apply to Felix →';
+    submitBtn.disabled = false;
   }
 }
 
@@ -920,28 +920,16 @@ async function submitSession() {
   }
   const summary = lines.join('\n');
 
-  // Option 1: tg.sendData — works when opened from keyboard button
-  if (tg) {
-    tg.HapticFeedback?.notificationOccurred('success');
-    try {
-      tg.sendData(summary);
-      return; // app closes — done
-    } catch(e) { /* fall through */ }
-  }
+  if (tg) tg.HapticFeedback?.notificationOccurred('success');
 
-  // Option 2: POST directly to Telegram Bot API (bot sends itself a message)
-  // Repo is private so token is not publicly accessible
+  // POST directly to Telegram Bot API
   const BOT_TOKEN = '8763547695:AAHN8noG0Y5S5rbdAgjRWWkYWBuRLZOwAYs';
   const CHAT_ID = '8699242987';
   try {
     const resp = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        chat_id: CHAT_ID,
-        text: summary,
-        // no parse_mode
-      })
+      body: JSON.stringify({ chat_id: CHAT_ID, text: summary })
     });
     const result = await resp.json();
     if (result.ok) {
@@ -950,11 +938,15 @@ async function submitSession() {
       if (tg) setTimeout(() => tg.close(), 2000);
       return;
     }
-  } catch(e) { /* fall through */ }
-
-  // Option 3: show data for manual copy
-  btn.textContent = '✓ Session done';
-  showToast('✓ Saved locally');
+    // API returned error
+    btn.textContent = '✗ Failed — tap to retry';
+    btn.disabled = false;
+    showToast('Submit failed: ' + (result.description || 'unknown error'));
+  } catch(e) {
+    btn.textContent = '✗ Failed — tap to retry';
+    btn.disabled = false;
+    showToast('Network error — check connection');
+  }
 
   setTimeout(() => {
     btn.textContent = 'Start new session →';
