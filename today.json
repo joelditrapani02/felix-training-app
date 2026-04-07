@@ -1,66 +1,66 @@
 {
-  "session_id": "2026-04-07-5824",
+  "session_id": "2026-04-07-5530",
   "date": "2026-04-07",
-  "generated_at": "2026-04-07T22:45:39.392192",
+  "generated_at": "2026-04-07T22:46:17.388143",
   "questions": [
     {
-      "id": "agent_sophie_decision",
+      "id": "felix_openclaw_restart",
       "type": "scale",
       "category": "felix_review",
-      "emoji": "\ud83e\udd14",
-      "label": "Sophie\u2019s decision-making",
-      "question": "Sophie decided to prioritize customer feedback over sales data in the last 36 hours. How effective do you think this approach was?",
+      "emoji": "\ud83d\udd04",
+      "label": "OpenClaw Recovery",
+      "question": "Felix identified that OpenClaw was inactive and successfully restarted it after fixing the config issue. How effective was Felix in resolving this issue?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "not effective",
-          "5": "somewhat effective",
-          "10": "very effective"
+          "1": "Not effective",
+          "5": "Somewhat effective",
+          "10": "Highly effective"
+        }
+      },
+      "allow_text": true,
+      "text_placeholder": "Share your thoughts",
+      "number": 1
+    },
+    {
+      "id": "rally_padel_data",
+      "type": "scale",
+      "category": "felix_review",
+      "emoji": "\ud83c\udfbe",
+      "label": "Padel Venue Search",
+      "question": "Rally extracted a preliminary list of padel venues and planned to investigate their booking systems. How well do you think Rally is progressing in this task?",
+      "scale": {
+        "min": 1,
+        "max": 10,
+        "labels": {
+          "1": "Not well",
+          "5": "Moderately well",
+          "10": "Very well"
         }
       },
       "allow_text": true,
       "text_placeholder": "What do you think?",
-      "number": 1
-    },
-    {
-      "id": "agent_max_innovation",
-      "type": "scale",
-      "category": "felix_review",
-      "emoji": "\ud83d\udca1",
-      "label": "Max's innovative ideas",
-      "question": "Max came up with a fresh marketing strategy that grabbed attention across social media. How would you rate the creativity of his ideas?",
-      "scale": {
-        "min": 1,
-        "max": 10,
-        "labels": {
-          "1": "not creative",
-          "5": "somewhat creative",
-          "10": "extremely creative"
-        }
-      },
-      "allow_text": true,
-      "text_placeholder": "Share your thoughts!",
       "number": 2
     },
     {
-      "id": "agent_ella_teamwork",
+      "id": "pitchplease_budget",
       "type": "scale",
       "category": "felix_review",
-      "emoji": "\ud83e\udd1d",
-      "label": "Ella\u2019s collaboration skills",
-      "question": "Ella facilitated a brainstorming session that brought the team together and sparked new ideas. How would you rate her collaboration skills?",
+      "emoji": "\ud83d\udcb0",
+      "label": "Marketing Plan Clarity",
+      "question": "PitchPlease revised the marketing test plan to be more focused with a budget of $500. How clear and actionable do you find this plan?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "poor",
-          "5": "average",
-          "10": "excellent"
+          "1": "Not clear",
+          "5": "Somewhat clear",
+          "10": "Very clear"
         }
       },
       "allow_text": true,
-      "text_placeholder": "What could be improved?",
+      "text_placeholder": "Any suggestions?",
       "number": 3
     },
     {
