@@ -1,106 +1,106 @@
 {
-  "session_id": "2026-04-08-8575",
+  "session_id": "2026-04-08-8155",
   "date": "2026-04-08",
-  "generated_at": "2026-04-07T22:09:45.724717",
+  "generated_at": "2026-04-07T22:39:15.952848",
   "questions": [
     {
-      "id": "real-main-0",
+      "id": "atlas-openclaw-restart-autonomy",
       "type": "scale",
       "category": "felix_review",
-      "emoji": "\ud83e\udd16",
-      "label": "Felix \u00b7 Response quality",
-      "question": "Here's what **Felix** said on 2026-04-07:\n\n> That's Felix alerting you about an Atlas cron failure. It shouldn't be \u2014 HEARTBEAT.md explicitly says Atlas jobs are exempt from Felix's failure alerting (Atlas has its own). That alert came from somewhere else.\n\nLet me check where it originated and fix it.",
+      "emoji": "\ud83d\udd27",
+      "label": "Atlas restart call",
+      "question": "Felix noticed the Atlas VPS had OpenClaw down, ran `openclaw doctor --fix` autonomously, and brought it back up \u2014 all before you even knew there was a problem. Was that the right move, or should Felix have flagged it to you first?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "Way off",
-          "5": "Okay",
-          "10": "Perfect"
+          "1": "should've asked me",
+          "5": "borderline OK",
+          "10": "exactly right"
         }
       },
       "allow_text": true,
-      "text_placeholder": "What was off, or what worked? (optional)",
+      "text_placeholder": "Where's the line for Felix acting vs flagging on infra issues?",
       "number": 1
     },
     {
-      "id": "real-rally-1",
+      "id": "atlas-felix-separation-execution",
       "type": "scale",
       "category": "felix_review",
-      "emoji": "\ud83e\udd16",
-      "label": "Rally \u00b7 Response quality",
-      "question": "Here's what **Rally** said on 2026-04-06:\n\n> Now I have the full picture. The current HoP scraper reads a single point in time and can't track fill progression. I'll rebuild it to store historical spot counts per session, then compute fill velocity from the delta.",
+      "emoji": "\u2702\ufe0f",
+      "label": "Separation plan execution",
+      "question": "Felix ran the full Atlas-Felix separation \u2014 disabled token sync, archived the bridge inbox, removed the Atlas workspace, built a Granola router \u2014 all in one session. How well did it handle the complexity and sequencing?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "Way off",
-          "5": "Okay",
-          "10": "Perfect"
+          "1": "messy / lost track",
+          "5": "got it done",
+          "10": "clean and confident"
         }
       },
       "allow_text": true,
-      "text_placeholder": "What was off, or what worked? (optional)",
+      "text_placeholder": "What would you have done differently?",
       "number": 2
     },
     {
-      "id": "real-haven-2",
+      "id": "codex-max-subagent-block",
       "type": "scale",
       "category": "felix_review",
       "emoji": "\ud83e\udd16",
-      "label": "Haven \u00b7 Response quality",
-      "question": "Here's what **Haven** said on 2026-04-06:\n\n> \u26a0\ufe0f Haven form watcher failed - Google token expired for joel@joelditrapani.com (HTTP 400 on token refresh). The form watcher can't read the Google Sheet until the token is renewed. To fix: re-run the Google auth flow for the joel account on Felix.",
+      "label": "Config debugging",
+      "question": "Felix tried to spawn a Codex Max subagent, hit a config block, patched the provider catalog, realised the fallback list was the real gate, patched that too \u2014 across multiple attempts and a gateway restart. Did it handle this well or spin too long?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "Way off",
-          "5": "Okay",
-          "10": "Perfect"
+          "1": "too much wheel-spinning",
+          "5": "OK but inefficient",
+          "10": "sharp and methodical"
         }
       },
       "allow_text": true,
-      "text_placeholder": "What was off, or what worked? (optional)",
+      "text_placeholder": "How should Felix handle repeated config blocks in future?",
       "number": 3
     },
     {
-      "id": "voice-001",
+      "id": "betterai-bot-setup-speed",
       "type": "scale",
-      "category": "writing_style",
-      "emoji": "\u270d\ufe0f",
-      "label": "Voice & tone check",
-      "question": "Over the last 24 hours \u2014 did Felix and the sub-agents sound like extensions of you, or did they drift into AI-speak?",
+      "category": "felix_review",
+      "emoji": "\ud83d\ude80",
+      "label": "betterAI bot creation",
+      "question": "Felix created the betterAI bot, wired it with SOUL.md, an 8-week plan, and full Felix workspace access \u2014 without you needing to spec it out. How well did it interpret what you wanted?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "AI-speak",
-          "5": "Okay",
-          "10": "Your voice"
+          "1": "missed the mark",
+          "5": "functional but generic",
+          "10": "nailed the intent"
         }
       },
       "allow_text": true,
-      "text_placeholder": "Specific moment or phrase that felt off (optional)",
+      "text_placeholder": "What was missing or off about the setup?",
       "number": 4
     },
     {
-      "id": "proactive-002",
+      "id": "dashboard-voice-fix",
       "type": "scale",
-      "category": "joel_modeling",
-      "emoji": "\u26a1",
-      "label": "Felix \u00b7 Proactivity",
-      "question": "In the last 24 hours, did Felix proactively surface something useful you didn't ask for?",
+      "category": "felix_review",
+      "emoji": "\ud83c\udf99\ufe0f",
+      "label": "Voice gateway diagnosis",
+      "question": "The Felix mini app voice was returning 500 errors. Felix traced it to a broken secrets path left from the Atlas removal, added an env fallback, killed a stale process on port 8765, got it working. How confident are you in that diagnosis?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "Nothing useful",
-          "5": "Some",
-          "10": "Exactly right"
+          "1": "lucky guess",
+          "5": "reasonable",
+          "10": "precise and methodical"
         }
       },
       "allow_text": true,
-      "text_placeholder": "What should it have flagged that it missed? (optional)",
+      "text_placeholder": "Anything about the debug process that felt off?",
       "number": 5
     }
   ],
