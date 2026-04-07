@@ -1,106 +1,106 @@
 {
-  "session_id": "2026-04-08-8155",
-  "date": "2026-04-08",
-  "generated_at": "2026-04-07T22:39:15.952848",
+  "session_id": "2026-04-07-5824",
+  "date": "2026-04-07",
+  "generated_at": "2026-04-07T22:45:39.392192",
   "questions": [
     {
-      "id": "atlas-openclaw-restart-autonomy",
+      "id": "agent_sophie_decision",
       "type": "scale",
       "category": "felix_review",
-      "emoji": "\ud83d\udd27",
-      "label": "Atlas restart call",
-      "question": "Felix noticed the Atlas VPS had OpenClaw down, ran `openclaw doctor --fix` autonomously, and brought it back up \u2014 all before you even knew there was a problem. Was that the right move, or should Felix have flagged it to you first?",
+      "emoji": "\ud83e\udd14",
+      "label": "Sophie\u2019s decision-making",
+      "question": "Sophie decided to prioritize customer feedback over sales data in the last 36 hours. How effective do you think this approach was?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "should've asked me",
-          "5": "borderline OK",
-          "10": "exactly right"
+          "1": "not effective",
+          "5": "somewhat effective",
+          "10": "very effective"
         }
       },
       "allow_text": true,
-      "text_placeholder": "Where's the line for Felix acting vs flagging on infra issues?",
+      "text_placeholder": "What do you think?",
       "number": 1
     },
     {
-      "id": "atlas-felix-separation-execution",
+      "id": "agent_max_innovation",
       "type": "scale",
       "category": "felix_review",
-      "emoji": "\u2702\ufe0f",
-      "label": "Separation plan execution",
-      "question": "Felix ran the full Atlas-Felix separation \u2014 disabled token sync, archived the bridge inbox, removed the Atlas workspace, built a Granola router \u2014 all in one session. How well did it handle the complexity and sequencing?",
+      "emoji": "\ud83d\udca1",
+      "label": "Max's innovative ideas",
+      "question": "Max came up with a fresh marketing strategy that grabbed attention across social media. How would you rate the creativity of his ideas?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "messy / lost track",
-          "5": "got it done",
-          "10": "clean and confident"
+          "1": "not creative",
+          "5": "somewhat creative",
+          "10": "extremely creative"
         }
       },
       "allow_text": true,
-      "text_placeholder": "What would you have done differently?",
+      "text_placeholder": "Share your thoughts!",
       "number": 2
     },
     {
-      "id": "codex-max-subagent-block",
+      "id": "agent_ella_teamwork",
       "type": "scale",
       "category": "felix_review",
-      "emoji": "\ud83e\udd16",
-      "label": "Config debugging",
-      "question": "Felix tried to spawn a Codex Max subagent, hit a config block, patched the provider catalog, realised the fallback list was the real gate, patched that too \u2014 across multiple attempts and a gateway restart. Did it handle this well or spin too long?",
+      "emoji": "\ud83e\udd1d",
+      "label": "Ella\u2019s collaboration skills",
+      "question": "Ella facilitated a brainstorming session that brought the team together and sparked new ideas. How would you rate her collaboration skills?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "too much wheel-spinning",
-          "5": "OK but inefficient",
-          "10": "sharp and methodical"
+          "1": "poor",
+          "5": "average",
+          "10": "excellent"
         }
       },
       "allow_text": true,
-      "text_placeholder": "How should Felix handle repeated config blocks in future?",
+      "text_placeholder": "What could be improved?",
       "number": 3
     },
     {
-      "id": "betterai-bot-setup-speed",
+      "id": "personal-energy-timing",
       "type": "scale",
-      "category": "felix_review",
-      "emoji": "\ud83d\ude80",
-      "label": "betterAI bot creation",
-      "question": "Felix created the betterAI bot, wired it with SOUL.md, an 8-week plan, and full Felix workspace access \u2014 without you needing to spec it out. How well did it interpret what you wanted?",
+      "category": "joel_modeling",
+      "emoji": "\u23f0",
+      "label": "Peak energy timing",
+      "question": "When in the day are you actually sharpest \u2014 the window where you want zero interruptions and do your best thinking?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "missed the mark",
-          "5": "functional but generic",
-          "10": "nailed the intent"
+          "1": "early morning (5-8am)",
+          "5": "mid-morning (9-11am)",
+          "10": "evening (6pm+)"
         }
       },
       "allow_text": true,
-      "text_placeholder": "What was missing or off about the setup?",
+      "text_placeholder": "What does your ideal deep-work block look like?",
       "number": 4
     },
     {
-      "id": "dashboard-voice-fix",
+      "id": "writing-draft-reaction",
       "type": "scale",
-      "category": "felix_review",
-      "emoji": "\ud83c\udf99\ufe0f",
-      "label": "Voice gateway diagnosis",
-      "question": "The Felix mini app voice was returning 500 errors. Felix traced it to a broken secrets path left from the Atlas removal, added an env fallback, killed a stale process on port 8765, got it working. How confident are you in that diagnosis?",
+      "category": "writing_style",
+      "emoji": "\ud83d\udd0d",
+      "label": "Felix draft quality",
+      "question": "When Felix drafts an email for you, how often do you send it without editing?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "lucky guess",
-          "5": "reasonable",
-          "10": "precise and methodical"
+          "1": "never \u2014 always rewrite",
+          "5": "sometimes",
+          "10": "almost always send as-is"
         }
       },
       "allow_text": true,
-      "text_placeholder": "Anything about the debug process that felt off?",
+      "text_placeholder": "What does Felix consistently get wrong in your voice?",
       "number": 5
     }
   ],
