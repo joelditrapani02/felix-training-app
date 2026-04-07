@@ -1,72 +1,109 @@
 {
-  "session_id": "2026-04-08-2559",
+  "session_id": "2026-04-08-8575",
   "date": "2026-04-08",
-  "generated_at": "2026-04-07T21:58:18.653469",
+  "generated_at": "2026-04-07T22:09:45.724717",
   "questions": [
     {
-      "id": "resp-main-0",
-      "number": 1,
-      "type": "response_review",
-      "category": "Felix \u00b7 Response",
+      "id": "real-main-0",
+      "type": "scale",
+      "category": "felix_review",
       "emoji": "\ud83e\udd16",
-      "prompt": "Here's what Felix said on 2026-04-07:",
-      "excerpt": "That's Felix alerting you about an Atlas cron failure. It shouldn't be \u2014 HEARTBEAT.md explicitly says Atlas jobs are exempt from Felix's failure alerting (Atlas has its own). That alert came from somewhere else.\n\nLet me check where it originated and fix it.",
-      "question": "Rate this response: was it accurate, direct, and useful?",
-      "scale": "1\u201310 \u00b7 Wrong/unhelpful \u2192 Perfect",
-      "hint": "What was off? (optional)"
+      "label": "Felix \u00b7 Response quality",
+      "question": "Here's what **Felix** said on 2026-04-07:\n\n> That's Felix alerting you about an Atlas cron failure. It shouldn't be \u2014 HEARTBEAT.md explicitly says Atlas jobs are exempt from Felix's failure alerting (Atlas has its own). That alert came from somewhere else.\n\nLet me check where it originated and fix it.",
+      "scale": {
+        "min": 1,
+        "max": 10,
+        "labels": {
+          "1": "Way off",
+          "5": "Okay",
+          "10": "Perfect"
+        }
+      },
+      "allow_text": true,
+      "text_placeholder": "What was off, or what worked? (optional)",
+      "number": 1
     },
     {
-      "id": "resp-rally-1",
-      "number": 2,
-      "type": "response_review",
-      "category": "Rally \u00b7 Response",
+      "id": "real-rally-1",
+      "type": "scale",
+      "category": "felix_review",
       "emoji": "\ud83e\udd16",
-      "prompt": "Here's what Rally said on 2026-04-06:",
-      "excerpt": "Wednesday 11am reminder set.\n\nOn the pickleball data \u2014 you're right to question it. The low numbers (6\u201310% for HoP) aren't actual utilisation of the courts. HoP uses an event-based booking system (Podplay), so the tracker measures waitlisted sessions as a proxy \u2014 it's not slot-based. A session showing 6% means 6% of sessions have a waitlist, not that 6% of courts are booked.\n\nThe padel and tennis numbers are slot-based (from Playtomic), so they're comparable. The pickleball numbers are a complet",
-      "question": "Rate this response: was it accurate, direct, and useful?",
-      "scale": "1\u201310 \u00b7 Wrong/unhelpful \u2192 Perfect",
-      "hint": "What was off? (optional)"
+      "label": "Rally \u00b7 Response quality",
+      "question": "Here's what **Rally** said on 2026-04-06:\n\n> Now I have the full picture. The current HoP scraper reads a single point in time and can't track fill progression. I'll rebuild it to store historical spot counts per session, then compute fill velocity from the delta.",
+      "scale": {
+        "min": 1,
+        "max": 10,
+        "labels": {
+          "1": "Way off",
+          "5": "Okay",
+          "10": "Perfect"
+        }
+      },
+      "allow_text": true,
+      "text_placeholder": "What was off, or what worked? (optional)",
+      "number": 2
     },
     {
-      "id": "resp-haven-2",
-      "number": 3,
-      "type": "response_review",
-      "category": "Haven \u00b7 Response",
+      "id": "real-haven-2",
+      "type": "scale",
+      "category": "felix_review",
       "emoji": "\ud83e\udd16",
-      "prompt": "Here's what Haven said on 2026-04-06:",
-      "excerpt": "\u26a0\ufe0f Haven form watcher failed - Google token expired for joel@joelditrapani.com (HTTP 400 on token refresh). The form watcher can't read the Google Sheet until the token is renewed. To fix: re-run the Google auth flow for the joel account on Felix.",
-      "question": "Rate this response: was it accurate, direct, and useful?",
-      "scale": "1\u201310 \u00b7 Wrong/unhelpful \u2192 Perfect",
-      "hint": "What was off? (optional)"
+      "label": "Haven \u00b7 Response quality",
+      "question": "Here's what **Haven** said on 2026-04-06:\n\n> \u26a0\ufe0f Haven form watcher failed - Google token expired for joel@joelditrapani.com (HTTP 400 on token refresh). The form watcher can't read the Google Sheet until the token is renewed. To fix: re-run the Google auth flow for the joel account on Felix.",
+      "scale": {
+        "min": 1,
+        "max": 10,
+        "labels": {
+          "1": "Way off",
+          "5": "Okay",
+          "10": "Perfect"
+        }
+      },
+      "allow_text": true,
+      "text_placeholder": "What was off, or what worked? (optional)",
+      "number": 3
     },
     {
-      "id": "voice-check",
-      "number": 4,
-      "type": "voice_calibration",
-      "category": "Voice & Tone",
+      "id": "voice-001",
+      "type": "scale",
+      "category": "writing_style",
       "emoji": "\u270d\ufe0f",
-      "prompt": "Last 24 hours overall:",
-      "excerpt": null,
-      "question": "Did the agents sound like extensions of you, or did they drift into AI-speak?",
-      "scale": "1\u201310 \u00b7 AI-speak \u2192 Your voice",
-      "hint": "Specific phrase or moment that was off (optional)"
+      "label": "Voice & tone check",
+      "question": "Over the last 24 hours \u2014 did Felix and the sub-agents sound like extensions of you, or did they drift into AI-speak?",
+      "scale": {
+        "min": 1,
+        "max": 10,
+        "labels": {
+          "1": "AI-speak",
+          "5": "Okay",
+          "10": "Your voice"
+        }
+      },
+      "allow_text": true,
+      "text_placeholder": "Specific moment or phrase that felt off (optional)",
+      "number": 4
     },
     {
-      "id": "proactive-check",
-      "number": 5,
-      "type": "proactive_check",
-      "category": "Felix \u00b7 Proactivity",
+      "id": "proactive-002",
+      "type": "scale",
+      "category": "joel_modeling",
       "emoji": "\u26a1",
-      "prompt": "Felix flagged this on 2026-04-07:",
-      "excerpt": "The file already has comprehensive entries for today. Let me check if there's anything new from this session to append.\n\nThe session covered:\n1. Atlas was down (OpenClaw inactive, `providers` key config error) - fixed via `openclaw doctor --fix`\n2. Atlas Tailscale IP (100.80.61.61) was unreachable; used direct IP (45.76.127.205) to diagnose\n3. `atlas-ops-health` cron at 3 consecutive errors due to",
-      "question": "Did Felix surface this at the right time? Should it have flagged this earlier, or differently?",
-      "scale": "1\u201310 \u00b7 Too late/wrong \u2192 Exactly right",
-      "hint": "What should it have done instead? (optional)"
+      "label": "Felix \u00b7 Proactivity",
+      "question": "In the last 24 hours, did Felix proactively surface something useful you didn't ask for?",
+      "scale": {
+        "min": 1,
+        "max": 10,
+        "labels": {
+          "1": "Nothing useful",
+          "5": "Some",
+          "10": "Exactly right"
+        }
+      },
+      "allow_text": true,
+      "text_placeholder": "What should it have flagged that it missed? (optional)",
+      "number": 5
     }
   ],
   "responses": {},
-  "submitted": false,
-  "stats": {
-    "actions_pulled": 1199
-  }
+  "submitted": false
 }
