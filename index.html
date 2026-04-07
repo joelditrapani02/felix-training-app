@@ -871,6 +871,36 @@ async function init() {
   tgInit();
 
   // Try to restore today's local session
+  // Always fetch today.json first — if session_id differs from cache, use fresh version
+  try {
+    const resp = await fetch(`./today.json?t=${Date.now()}`, { cache: 'no-store' });
+    if (resp.ok) {
+      const session = await resp.json();
+      if (session.questions?.length > 0) {
+        // Check if we have a matching saved session (same id, not submitted)
+        const saved = localStorage.getItem(SESSION_KEY);
+        if (saved) {
+          try {
+            const parsed = JSON.parse(saved);
+            if (parsed.sessionId === session.session_id && !parsed.submitted) {
+              state = parsed;
+              render();
+              return;
+            }
+          } catch(e) {}
+        }
+        // Load fresh session from server
+        state.sessionId = session.session_id;
+        state.questions = session.questions.map((q,i) => ({...q, number: i+1}));
+        state.responses = {};
+        saveState();
+        render();
+        return;
+      }
+    }
+  } catch(e) { /* offline — fall through to cache or local pool */ }
+
+  // Try cached session
   const saved = localStorage.getItem(SESSION_KEY);
   if (saved) {
     try {
@@ -882,25 +912,6 @@ async function init() {
       }
     } catch(e) {}
   }
-
-  // Try to load today's real session from server
-  try {
-    const resp = await fetch(
-      `./today.json?t=${Date.now()}`,
-      { mode: 'cors', cache: 'no-store' }
-    );
-    if (resp.ok) {
-      const session = await resp.json();
-      if (session.date === state.date && session.questions?.length > 0) {
-        state.sessionId = session.session_id;
-        state.questions = session.questions.map((q,i) => ({...q, number: i+1}));
-        state.responses = {};
-        saveState();
-        render();
-        return;
-      }
-    }
-  } catch(e) { /* offline or tailscale not available — use local questions */ }
 
   // Fallback: generate from local pool
   generateSession(5);
