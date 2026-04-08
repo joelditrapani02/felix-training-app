@@ -1,106 +1,106 @@
 {
-  "session_id": "2026-04-07-5530",
-  "date": "2026-04-07",
-  "generated_at": "2026-04-07T22:46:17.388143",
+  "session_id": "2026-04-08-7497",
+  "date": "2026-04-08",
+  "generated_at": "2026-04-08T00:16:47.102624",
   "questions": [
     {
-      "id": "felix_openclaw_restart",
+      "id": "felix-atlas-restart",
       "type": "scale",
       "category": "felix_review",
       "emoji": "\ud83d\udd04",
-      "label": "OpenClaw Recovery",
-      "question": "Felix identified that OpenClaw was inactive and successfully restarted it after fixing the config issue. How effective was Felix in resolving this issue?",
+      "label": "Atlas Restart Success",
+      "question": "Felix identified that OpenClaw was inactive, and successfully restarted it after fixing a config issue. How would you rate the effectiveness of this troubleshooting?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "Not effective",
-          "5": "Somewhat effective",
-          "10": "Highly effective"
+          "1": "poor",
+          "5": "average",
+          "10": "excellent"
         }
       },
       "allow_text": true,
-      "text_placeholder": "Share your thoughts",
+      "text_placeholder": "What could be improved?",
       "number": 1
     },
     {
-      "id": "rally_padel_data",
+      "id": "rally-venue-extraction",
       "type": "scale",
       "category": "felix_review",
-      "emoji": "\ud83c\udfbe",
-      "label": "Padel Venue Search",
-      "question": "Rally extracted a preliminary list of padel venues and planned to investigate their booking systems. How well do you think Rally is progressing in this task?",
+      "emoji": "\ud83c\udfdf\ufe0f",
+      "label": "Padel Venue Extraction",
+      "question": "Rally extracted a list of padel venues and planned to investigate their booking systems. How confident are you in Rally's approach to gathering this information?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "Not well",
-          "5": "Moderately well",
-          "10": "Very well"
+          "1": "not confident",
+          "5": "somewhat confident",
+          "10": "very confident"
         }
       },
       "allow_text": true,
-      "text_placeholder": "What do you think?",
+      "text_placeholder": "What do you think of the plan?",
       "number": 2
     },
     {
-      "id": "pitchplease_budget",
+      "id": "haven-council-research",
       "type": "scale",
       "category": "felix_review",
-      "emoji": "\ud83d\udcb0",
-      "label": "Marketing Plan Clarity",
-      "question": "PitchPlease revised the marketing test plan to be more focused with a budget of $500. How clear and actionable do you find this plan?",
+      "emoji": "\ud83e\udd1d",
+      "label": "Acquisition Council Research",
+      "question": "Haven compiled a list of five experts for a carpet cleaning and pest control acquisition council. How valuable do you find this selection process for the project?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "Not clear",
-          "5": "Somewhat clear",
-          "10": "Very clear"
+          "1": "not valuable",
+          "5": "somewhat valuable",
+          "10": "very valuable"
         }
       },
       "allow_text": true,
-      "text_placeholder": "Any suggestions?",
+      "text_placeholder": "What expertise should be added?",
       "number": 3
     },
     {
-      "id": "personal-energy-timing",
+      "id": "personal-decision-frame",
       "type": "scale",
       "category": "joel_modeling",
-      "emoji": "\u23f0",
-      "label": "Peak energy timing",
-      "question": "When in the day are you actually sharpest \u2014 the window where you want zero interruptions and do your best thinking?",
+      "emoji": "\ud83c\udfaf",
+      "label": "How you actually decide",
+      "question": "When you're deciding on something big \u2014 gut feel first or do you need to think it through on paper?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "early morning (5-8am)",
-          "5": "mid-morning (9-11am)",
-          "10": "evening (6pm+)"
+          "1": "pure gut",
+          "5": "both",
+          "10": "need to write it out"
         }
       },
       "allow_text": true,
-      "text_placeholder": "What does your ideal deep-work block look like?",
+      "text_placeholder": "What type of decision makes you flip modes?",
       "number": 4
     },
     {
-      "id": "writing-draft-reaction",
+      "id": "writing-length-instinct",
       "type": "scale",
       "category": "writing_style",
-      "emoji": "\ud83d\udd0d",
-      "label": "Felix draft quality",
-      "question": "When Felix drafts an email for you, how often do you send it without editing?",
+      "emoji": "\ud83d\udccf",
+      "label": "Short vs complete",
+      "question": "Someone asks a complex question. Instinct \u2014 give them the short version now, or take the time to write it out properly?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "never \u2014 always rewrite",
-          "5": "sometimes",
-          "10": "almost always send as-is"
+          "1": "short version, ask follow-ups",
+          "5": "depends",
+          "10": "write it out properly"
         }
       },
       "allow_text": true,
-      "text_placeholder": "What does Felix consistently get wrong in your voice?",
+      "text_placeholder": "What flips you to the other mode?",
       "number": 5
     }
   ],
