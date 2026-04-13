@@ -1,26 +1,26 @@
 {
-  "session_id": "2026-04-08-7497",
-  "date": "2026-04-08",
-  "generated_at": "2026-04-08T00:16:47.102624",
+  "session_id": "2026-04-13-9152",
+  "date": "2026-04-13",
+  "generated_at": "2026-04-13T19:00:24.413502",
   "questions": [
     {
-      "id": "felix-atlas-restart",
+      "id": "felix-update-urgency",
       "type": "scale",
       "category": "felix_review",
-      "emoji": "\ud83d\udd04",
-      "label": "Atlas Restart Success",
-      "question": "Felix identified that OpenClaw was inactive, and successfully restarted it after fixing a config issue. How would you rate the effectiveness of this troubleshooting?",
+      "emoji": "\u26a0\ufe0f",
+      "label": "Update urgency",
+      "question": "Felix flagged a critical security update for OpenClaw that needed immediate attention. How would you rate the urgency of this update based on the potential risks involved?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "poor",
-          "5": "average",
-          "10": "excellent"
+          "1": "Not urgent",
+          "5": "Moderately urgent",
+          "10": "Critical"
         }
       },
       "allow_text": true,
-      "text_placeholder": "What could be improved?",
+      "text_placeholder": "What specific risks did you consider?",
       "number": 1
     },
     {
@@ -28,79 +28,79 @@
       "type": "scale",
       "category": "felix_review",
       "emoji": "\ud83c\udfdf\ufe0f",
-      "label": "Padel Venue Extraction",
-      "question": "Rally extracted a list of padel venues and planned to investigate their booking systems. How confident are you in Rally's approach to gathering this information?",
+      "label": "Data extraction effectiveness",
+      "question": "Rally extracted a list of padel venues and began identifying their booking systems. How effective do you think Rally was in gathering initial data for this project?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "not confident",
-          "5": "somewhat confident",
-          "10": "very confident"
+          "1": "Not effective",
+          "5": "Somewhat effective",
+          "10": "Highly effective"
         }
       },
       "allow_text": true,
-      "text_placeholder": "What do you think of the plan?",
+      "text_placeholder": "What could have improved this process?",
       "number": 2
     },
     {
-      "id": "haven-council-research",
+      "id": "keyline-debugging-emails",
       "type": "scale",
       "category": "felix_review",
-      "emoji": "\ud83e\udd1d",
-      "label": "Acquisition Council Research",
-      "question": "Haven compiled a list of five experts for a carpet cleaning and pest control acquisition council. How valuable do you find this selection process for the project?",
+      "emoji": "\ud83d\udee0\ufe0f",
+      "label": "Debugging efficiency",
+      "question": "Keyline noticed that email subjects and senders were coming back blank and quickly moved to debug the issue. How would you rate Keyline's efficiency in addressing this problem?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "not valuable",
-          "5": "somewhat valuable",
-          "10": "very valuable"
+          "1": "Very slow",
+          "5": "Average speed",
+          "10": "Very fast"
         }
       },
       "allow_text": true,
-      "text_placeholder": "What expertise should be added?",
+      "text_placeholder": "Any suggestions for faster debugging?",
       "number": 3
     },
     {
-      "id": "personal-decision-frame",
+      "id": "personal-morning-routine",
       "type": "scale",
       "category": "joel_modeling",
-      "emoji": "\ud83c\udfaf",
-      "label": "How you actually decide",
-      "question": "When you're deciding on something big \u2014 gut feel first or do you need to think it through on paper?",
+      "emoji": "\u2600\ufe0f",
+      "label": "Morning person?",
+      "question": "Early morning \u2014 do you naturally wake up ready to go, or does it take a while to get into it?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "pure gut",
-          "5": "both",
-          "10": "need to write it out"
+          "1": "slow starter",
+          "5": "depends on the day",
+          "10": "up and firing immediately"
         }
       },
       "allow_text": true,
-      "text_placeholder": "What type of decision makes you flip modes?",
+      "text_placeholder": "What's your first 30 mins actually look like?",
       "number": 4
     },
     {
-      "id": "writing-length-instinct",
+      "id": "writing-university-dvc",
       "type": "scale",
       "category": "writing_style",
-      "emoji": "\ud83d\udccf",
-      "label": "Short vs complete",
-      "question": "Someone asks a complex question. Instinct \u2014 give them the short version now, or take the time to write it out properly?",
+      "emoji": "\ud83c\udf93",
+      "label": "DVC cold email tone",
+      "question": "Cold outreach to a DVC you've never met. A or B?\n\nA: \"Hi Sarah, I'm Joel \u2014 founder of Vygo. Worth a quick chat?\"\n\nB: \"Dear Dr Smith, I'm reaching out to explore a potential partnership.\"",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "short version, ask follow-ups",
-          "5": "depends",
-          "10": "write it out properly"
+          "1": "definitely A",
+          "5": "somewhere between",
+          "10": "definitely B"
         }
       },
       "allow_text": true,
-      "text_placeholder": "What flips you to the other mode?",
+      "text_placeholder": "What tone actually works with this audience?",
       "number": 5
     }
   ],
