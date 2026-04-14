@@ -1,106 +1,106 @@
 {
-  "session_id": "2026-04-13-9152",
-  "date": "2026-04-13",
-  "generated_at": "2026-04-13T19:00:24.413502",
+  "session_id": "2026-04-14-9399",
+  "date": "2026-04-14",
+  "generated_at": "2026-04-14T19:00:17.546296",
   "questions": [
     {
-      "id": "felix-update-urgency",
+      "id": "tribe-padel-booking-search",
       "type": "scale",
       "category": "felix_review",
-      "emoji": "\u26a0\ufe0f",
-      "label": "Update urgency",
-      "question": "Felix flagged a critical security update for OpenClaw that needed immediate attention. How would you rate the urgency of this update based on the potential risks involved?",
+      "emoji": "\ud83d\udd0d",
+      "label": "Booking search effectiveness",
+      "question": "Rally took the initiative to search for Tribe Padel Sydney's booking system after encountering a JavaScript-heavy website. How effective do you think this approach was?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "Not urgent",
-          "5": "Moderately urgent",
-          "10": "Critical"
+          "1": "not effective",
+          "5": "somewhat effective",
+          "10": "very effective"
         }
       },
       "allow_text": true,
-      "text_placeholder": "What specific risks did you consider?",
+      "text_placeholder": "What would you suggest?",
       "number": 1
     },
     {
-      "id": "rally-venue-extraction",
+      "id": "keyline-cron-scripts-setup",
       "type": "scale",
       "category": "felix_review",
-      "emoji": "\ud83c\udfdf\ufe0f",
-      "label": "Data extraction effectiveness",
-      "question": "Rally extracted a list of padel venues and began identifying their booking systems. How effective do you think Rally was in gathering initial data for this project?",
+      "emoji": "\ud83d\uddd3\ufe0f",
+      "label": "Cron script setup clarity",
+      "question": "Keyline successfully outlined the setup for cron scripts and scheduled jobs for email reminders. How clear do you find this setup process?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "Not effective",
-          "5": "Somewhat effective",
-          "10": "Highly effective"
+          "1": "not clear",
+          "5": "somewhat clear",
+          "10": "very clear"
         }
       },
       "allow_text": true,
-      "text_placeholder": "What could have improved this process?",
+      "text_placeholder": "Any suggestions for improvement?",
       "number": 2
     },
     {
-      "id": "keyline-debugging-emails",
+      "id": "keyline-email-debugging",
       "type": "scale",
       "category": "felix_review",
-      "emoji": "\ud83d\udee0\ufe0f",
-      "label": "Debugging efficiency",
-      "question": "Keyline noticed that email subjects and senders were coming back blank and quickly moved to debug the issue. How would you rate Keyline's efficiency in addressing this problem?",
+      "emoji": "\ud83d\udc1e",
+      "label": "Email debugging efficiency",
+      "question": "Keyline noticed blank subjects/senders in the email returns and is debugging this issue. How efficient do you think Keyline's debugging process is?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "Very slow",
-          "5": "Average speed",
-          "10": "Very fast"
+          "1": "not efficient",
+          "5": "somewhat efficient",
+          "10": "very efficient"
         }
       },
       "allow_text": true,
-      "text_placeholder": "Any suggestions for faster debugging?",
+      "text_placeholder": "What else could be done?",
       "number": 3
     },
     {
-      "id": "personal-morning-routine",
+      "id": "personal-energy-peak",
       "type": "scale",
       "category": "joel_modeling",
-      "emoji": "\u2600\ufe0f",
-      "label": "Morning person?",
-      "question": "Early morning \u2014 do you naturally wake up ready to go, or does it take a while to get into it?",
+      "emoji": "\u26a1",
+      "label": "When you're sharpest",
+      "question": "Best ideas, clearest thinking, zero interruptions \u2014 what time of day is that for you?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "slow starter",
-          "5": "depends on the day",
-          "10": "up and firing immediately"
+          "1": "5-7am",
+          "5": "10am-12pm",
+          "10": "9pm+"
         }
       },
       "allow_text": true,
-      "text_placeholder": "What's your first 30 mins actually look like?",
+      "text_placeholder": "What kills that window for you?",
       "number": 4
     },
     {
-      "id": "writing-university-dvc",
+      "id": "writing-felix-voice-miss",
       "type": "scale",
       "category": "writing_style",
-      "emoji": "\ud83c\udf93",
-      "label": "DVC cold email tone",
-      "question": "Cold outreach to a DVC you've never met. A or B?\n\nA: \"Hi Sarah, I'm Joel \u2014 founder of Vygo. Worth a quick chat?\"\n\nB: \"Dear Dr Smith, I'm reaching out to explore a potential partnership.\"",
+      "emoji": "\ud83d\udd0d",
+      "label": "Felix's worst writing habit",
+      "question": "When Felix drafts something in your name \u2014 what's the thing it most often gets wrong about your voice?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "definitely A",
-          "5": "somewhere between",
-          "10": "definitely B"
+          "1": "too casual",
+          "5": "pretty good actually",
+          "10": "too formal/corporate"
         }
       },
       "allow_text": true,
-      "text_placeholder": "What tone actually works with this audience?",
+      "text_placeholder": "A specific phrase or pattern Felix over-uses",
       "number": 5
     }
   ],
