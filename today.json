@@ -1,15 +1,35 @@
 {
-  "session_id": "2026-04-14-9399",
-  "date": "2026-04-14",
-  "generated_at": "2026-04-14T19:00:17.546296",
+  "session_id": "2026-04-15-1222",
+  "date": "2026-04-15",
+  "generated_at": "2026-04-15T19:00:24.763630",
   "questions": [
     {
-      "id": "tribe-padel-booking-search",
+      "id": "felix-update-critical",
       "type": "scale",
       "category": "felix_review",
-      "emoji": "\ud83d\udd0d",
-      "label": "Booking search effectiveness",
-      "question": "Rally took the initiative to search for Tribe Padel Sydney's booking system after encountering a JavaScript-heavy website. How effective do you think this approach was?",
+      "emoji": "\ud83d\udd34",
+      "label": "Update urgency",
+      "question": "Felix flagged a critical security update that needed immediate attention. How would you rate the urgency of this update based on its potential impact?",
+      "scale": {
+        "min": 1,
+        "max": 10,
+        "labels": {
+          "1": "not urgent",
+          "5": "moderately urgent",
+          "10": "extremely urgent"
+        }
+      },
+      "allow_text": true,
+      "text_placeholder": "What concerns do you have?",
+      "number": 1
+    },
+    {
+      "id": "rally-padel-venues",
+      "type": "scale",
+      "category": "felix_review",
+      "emoji": "\ud83c\udfbe",
+      "label": "Data extraction success",
+      "question": "Rally extracted a list of padel venues but faced challenges with the booking systems. How effective do you think Rally was in gathering this information?",
       "scale": {
         "min": 1,
         "max": 10,
@@ -20,87 +40,67 @@
         }
       },
       "allow_text": true,
-      "text_placeholder": "What would you suggest?",
-      "number": 1
+      "text_placeholder": "What improvements would you suggest?",
+      "number": 2
     },
     {
-      "id": "keyline-cron-scripts-setup",
+      "id": "keyline-cron-setup",
       "type": "scale",
       "category": "felix_review",
       "emoji": "\ud83d\uddd3\ufe0f",
-      "label": "Cron script setup clarity",
-      "question": "Keyline successfully outlined the setup for cron scripts and scheduled jobs for email reminders. How clear do you find this setup process?",
+      "label": "Cron job clarity",
+      "question": "Keyline set up cron jobs for daily tasks but faced issues with email subjects being blank. How clear do you find the cron setup process described?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "not clear",
+          "1": "very unclear",
           "5": "somewhat clear",
           "10": "very clear"
         }
       },
       "allow_text": true,
-      "text_placeholder": "Any suggestions for improvement?",
-      "number": 2
-    },
-    {
-      "id": "keyline-email-debugging",
-      "type": "scale",
-      "category": "felix_review",
-      "emoji": "\ud83d\udc1e",
-      "label": "Email debugging efficiency",
-      "question": "Keyline noticed blank subjects/senders in the email returns and is debugging this issue. How efficient do you think Keyline's debugging process is?",
-      "scale": {
-        "min": 1,
-        "max": 10,
-        "labels": {
-          "1": "not efficient",
-          "5": "somewhat efficient",
-          "10": "very efficient"
-        }
-      },
-      "allow_text": true,
-      "text_placeholder": "What else could be done?",
+      "text_placeholder": "What details are missing?",
       "number": 3
     },
     {
-      "id": "personal-energy-peak",
+      "id": "personal-gold-coast-move",
       "type": "scale",
       "category": "joel_modeling",
-      "emoji": "\u26a1",
-      "label": "When you're sharpest",
-      "question": "Best ideas, clearest thinking, zero interruptions \u2014 what time of day is that for you?",
+      "emoji": "\ud83c\udf0a",
+      "label": "Gold Coast forever?",
+      "question": "Gold Coast \u2014 permanent base or could you see yourself somewhere else in 5 years?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "5-7am",
-          "5": "10am-12pm",
-          "10": "9pm+"
+          "1": "definitely moving",
+          "5": "open to it",
+          "10": "Gold Coast forever"
         }
       },
       "allow_text": true,
-      "text_placeholder": "What kills that window for you?",
+      "text_placeholder": "Where would you go?",
       "number": 4
     },
     {
-      "id": "writing-felix-voice-miss",
+      "id": "writing-sign-off",
       "type": "scale",
       "category": "writing_style",
-      "emoji": "\ud83d\udd0d",
-      "label": "Felix's worst writing habit",
-      "question": "When Felix drafts something in your name \u2014 what's the thing it most often gets wrong about your voice?",
+      "emoji": "\ud83d\udc4b",
+      "label": "Your sign-off",
+      "question": "Professional email, someone you've met once. How do you sign off?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "too casual",
-          "5": "pretty good actually",
-          "10": "too formal/corporate"
+          "1": "just 'J'",
+          "5": "'Cheers, Joel'",
+          "10": "'Kind regards, Joel'"
         }
       },
       "allow_text": true,
-      "text_placeholder": "A specific phrase or pattern Felix over-uses",
+      "text_placeholder": "Does it change based on what?",
       "number": 5
     }
   ],
