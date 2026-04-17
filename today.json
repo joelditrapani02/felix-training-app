@@ -1,46 +1,46 @@
 {
-  "session_id": "2026-04-16-7053",
-  "date": "2026-04-16",
-  "generated_at": "2026-04-16T19:00:19.314290",
+  "session_id": "2026-04-17-3662",
+  "date": "2026-04-17",
+  "generated_at": "2026-04-17T19:00:25.752663",
   "questions": [
     {
-      "id": "felix-update",
+      "id": "felix-update-urgency",
       "type": "scale",
       "category": "felix_review",
       "emoji": "\u26a0\ufe0f",
       "label": "Update urgency",
-      "question": "Felix flagged a critical update for OpenClaw that included important security patches. How well do you think he handled this urgent situation?",
+      "question": "Felix flagged a critical update due to serious security vulnerabilities. How urgent do you think it is for us to implement this update?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "poorly",
-          "5": "adequately",
-          "10": "excellent"
+          "1": "Not urgent",
+          "5": "Moderately urgent",
+          "10": "Critical urgency"
         }
       },
       "allow_text": true,
-      "text_placeholder": "What did you like or dislike?",
+      "text_placeholder": "Share your thoughts",
       "number": 1
     },
     {
-      "id": "rally-venue-extraction",
+      "id": "rally-venue-discovery",
       "type": "scale",
       "category": "felix_review",
       "emoji": "\ud83c\udfbe",
-      "label": "Data gathering",
-      "question": "Rally extracted a list of padel venues and started structuring the data for booking info. How effective do you think he was in initiating this research?",
+      "label": "Venue discovery success",
+      "question": "Rally extracted a list of padel venues but faced challenges with uninformative websites. How effective do you think Rally's approach was in gathering this information?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "ineffective",
-          "5": "neutral",
-          "10": "highly effective"
+          "1": "Not effective",
+          "5": "Somewhat effective",
+          "10": "Very effective"
         }
       },
       "allow_text": true,
-      "text_placeholder": "What stood out to you?",
+      "text_placeholder": "What could be improved?",
       "number": 2
     },
     {
@@ -48,59 +48,59 @@
       "type": "scale",
       "category": "felix_review",
       "emoji": "\ud83d\udd27",
-      "label": "Debugging skills",
-      "question": "Keyline noticed blank email subjects and is debugging the issue. How confident are you in Keyline's ability to resolve this problem?",
+      "label": "Debugging email issues",
+      "question": "Keyline encountered an issue with blank email subjects and is debugging the problem. How confident are you in Keyline's ability to resolve this quickly?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "not confident",
-          "5": "somewhat confident",
-          "10": "very confident"
+          "1": "Not confident",
+          "5": "Somewhat confident",
+          "10": "Very confident"
         }
       },
       "allow_text": true,
-      "text_placeholder": "Any specific reasons?",
+      "text_placeholder": "Any suggestions?",
       "number": 3
     },
     {
-      "id": "personal-regret-type",
+      "id": "personal-podcast-ambition",
       "type": "scale",
       "category": "joel_modeling",
-      "emoji": "\ud83d\ude2c",
-      "label": "Your regret type",
-      "question": "Honest answer: are you more often the person who jumped too fast and wished they'd waited \u2014 or waited too long and watched someone else win?",
+      "emoji": "\ud83c\udf99\ufe0f",
+      "label": "DO AS I SAY ambition",
+      "question": "DO AS I SAY \u2014 hobby or something you actually want to build into a real platform?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "jumped too fast",
-          "5": "pretty even",
-          "10": "waited too long"
+          "1": "it's a hobby",
+          "5": "growing into something",
+          "10": "building a real platform"
         }
       },
       "allow_text": true,
-      "text_placeholder": "The one that comes to mind",
+      "text_placeholder": "What would 'winning' with the podcast look like?",
       "number": 4
     },
     {
-      "id": "writing-felix-voice-miss",
+      "id": "writing-sign-off",
       "type": "scale",
       "category": "writing_style",
-      "emoji": "\ud83d\udd0d",
-      "label": "Felix's worst writing habit",
-      "question": "When Felix drafts something in your name \u2014 what's the thing it most often gets wrong about your voice?",
+      "emoji": "\ud83d\udc4b",
+      "label": "Your sign-off",
+      "question": "Professional email, someone you've met once. How do you sign off?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "too casual",
-          "5": "pretty good actually",
-          "10": "too formal/corporate"
+          "1": "just 'J'",
+          "5": "'Cheers, Joel'",
+          "10": "'Kind regards, Joel'"
         }
       },
       "allow_text": true,
-      "text_placeholder": "A specific phrase or pattern Felix over-uses",
+      "text_placeholder": "Does it change based on what?",
       "number": 5
     }
   ],
