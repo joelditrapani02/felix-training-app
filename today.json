@@ -1,106 +1,106 @@
 {
-  "session_id": "2026-04-17-3662",
-  "date": "2026-04-17",
-  "generated_at": "2026-04-17T19:00:25.752663",
+  "session_id": "2026-04-18-5993",
+  "date": "2026-04-18",
+  "generated_at": "2026-04-18T19:00:15.310873",
   "questions": [
     {
-      "id": "felix-update-urgency",
+      "id": "felix-update-critical",
       "type": "scale",
       "category": "felix_review",
-      "emoji": "\u26a0\ufe0f",
+      "emoji": "\u26a1",
       "label": "Update urgency",
-      "question": "Felix flagged a critical update due to serious security vulnerabilities. How urgent do you think it is for us to implement this update?",
+      "question": "Felix flagged a critical update for OpenClaw, addressing serious security issues. How well do you think Felix handled the urgency of this situation?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "Not urgent",
-          "5": "Moderately urgent",
-          "10": "Critical urgency"
-        }
-      },
-      "allow_text": true,
-      "text_placeholder": "Share your thoughts",
-      "number": 1
-    },
-    {
-      "id": "rally-venue-discovery",
-      "type": "scale",
-      "category": "felix_review",
-      "emoji": "\ud83c\udfbe",
-      "label": "Venue discovery success",
-      "question": "Rally extracted a list of padel venues but faced challenges with uninformative websites. How effective do you think Rally's approach was in gathering this information?",
-      "scale": {
-        "min": 1,
-        "max": 10,
-        "labels": {
-          "1": "Not effective",
-          "5": "Somewhat effective",
-          "10": "Very effective"
+          "1": "poorly",
+          "5": "average",
+          "10": "exceptionally"
         }
       },
       "allow_text": true,
       "text_placeholder": "What could be improved?",
+      "number": 1
+    },
+    {
+      "id": "rally-venue-extraction",
+      "type": "scale",
+      "category": "felix_review",
+      "emoji": "\ud83c\udfbe",
+      "label": "Data extraction efficiency",
+      "question": "Rally extracted a preliminary list of padel venues but faced challenges with website info. How would you rate Rally's efficiency in gathering the initial data?",
+      "scale": {
+        "min": 1,
+        "max": 10,
+        "labels": {
+          "1": "ineffective",
+          "5": "neutral",
+          "10": "very effective"
+        }
+      },
+      "allow_text": true,
+      "text_placeholder": "Any suggestions for improvement?",
       "number": 2
     },
     {
-      "id": "keyline-email-debug",
+      "id": "home-meal-ideas",
       "type": "scale",
       "category": "felix_review",
-      "emoji": "\ud83d\udd27",
-      "label": "Debugging email issues",
-      "question": "Keyline encountered an issue with blank email subjects and is debugging the problem. How confident are you in Keyline's ability to resolve this quickly?",
+      "emoji": "\ud83c\udf7d\ufe0f",
+      "label": "Meal suggestion usefulness",
+      "question": "Home provided a list of finger food ideas for a 14-month-old, including easy wins and slightly more effort options. How useful do you find these meal suggestions?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "Not confident",
-          "5": "Somewhat confident",
-          "10": "Very confident"
+          "1": "not useful",
+          "5": "somewhat useful",
+          "10": "very useful"
         }
       },
       "allow_text": true,
-      "text_placeholder": "Any suggestions?",
+      "text_placeholder": "What did you like or dislike?",
       "number": 3
     },
     {
-      "id": "personal-podcast-ambition",
+      "id": "personal-vygo-headspace",
       "type": "scale",
       "category": "joel_modeling",
-      "emoji": "\ud83c\udf99\ufe0f",
-      "label": "DO AS I SAY ambition",
-      "question": "DO AS I SAY \u2014 hobby or something you actually want to build into a real platform?",
+      "emoji": "\ud83e\udde0",
+      "label": "Where your head's at",
+      "question": "Right now \u2014 is Vygo taking up more or less mental space than it was 6 months ago?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "it's a hobby",
-          "5": "growing into something",
-          "10": "building a real platform"
+          "1": "way less",
+          "5": "about the same",
+          "10": "way more"
         }
       },
       "allow_text": true,
-      "text_placeholder": "What would 'winning' with the podcast look like?",
+      "text_placeholder": "What's driving that shift?",
       "number": 4
     },
     {
-      "id": "writing-sign-off",
+      "id": "writing-length-instinct",
       "type": "scale",
       "category": "writing_style",
-      "emoji": "\ud83d\udc4b",
-      "label": "Your sign-off",
-      "question": "Professional email, someone you've met once. How do you sign off?",
+      "emoji": "\ud83d\udccf",
+      "label": "Short vs complete",
+      "question": "Someone asks a complex question. Instinct \u2014 give them the short version now, or take the time to write it out properly?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "just 'J'",
-          "5": "'Cheers, Joel'",
-          "10": "'Kind regards, Joel'"
+          "1": "short version, ask follow-ups",
+          "5": "depends",
+          "10": "write it out properly"
         }
       },
       "allow_text": true,
-      "text_placeholder": "Does it change based on what?",
+      "text_placeholder": "What flips you to the other mode?",
       "number": 5
     }
   ],
