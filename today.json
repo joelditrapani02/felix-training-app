@@ -1,22 +1,22 @@
 {
-  "session_id": "2026-04-18-5993",
-  "date": "2026-04-18",
-  "generated_at": "2026-04-18T19:00:15.310873",
+  "session_id": "2026-04-19-9053",
+  "date": "2026-04-19",
+  "generated_at": "2026-04-19T19:00:25.208318",
   "questions": [
     {
-      "id": "felix-update-critical",
+      "id": "felix-update-2026",
       "type": "scale",
       "category": "felix_review",
-      "emoji": "\u26a1",
+      "emoji": "\ud83d\udd04",
       "label": "Update urgency",
-      "question": "Felix flagged a critical update for OpenClaw, addressing serious security issues. How well do you think Felix handled the urgency of this situation?",
+      "question": "Felix flagged a critical update for OpenClaw as it contained important security patches. How effectively do you think Felix communicated the urgency of this update?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "poorly",
-          "5": "average",
-          "10": "exceptionally"
+          "1": "not urgent",
+          "5": "somewhat urgent",
+          "10": "extremely urgent"
         }
       },
       "allow_text": true,
@@ -27,80 +27,80 @@
       "id": "rally-venue-extraction",
       "type": "scale",
       "category": "felix_review",
-      "emoji": "\ud83c\udfbe",
-      "label": "Data extraction efficiency",
-      "question": "Rally extracted a preliminary list of padel venues but faced challenges with website info. How would you rate Rally's efficiency in gathering the initial data?",
+      "emoji": "\ud83c\udfdf\ufe0f",
+      "label": "Venue data accuracy",
+      "question": "Rally extracted a preliminary list of padel venues and their details. How confident are you in the accuracy and completeness of the data Rally provided?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "ineffective",
-          "5": "neutral",
+          "1": "not confident",
+          "5": "somewhat confident",
+          "10": "very confident"
+        }
+      },
+      "allow_text": true,
+      "text_placeholder": "What info is missing?",
+      "number": 2
+    },
+    {
+      "id": "rally-booking-system-search",
+      "type": "scale",
+      "category": "felix_review",
+      "emoji": "\ud83d\udd0d",
+      "label": "Search strategy effectiveness",
+      "question": "Rally decided to search for 'Tribe Padel Sydney booking system' after an unhelpful snapshot. How effective do you think this strategy was in finding the needed information?",
+      "scale": {
+        "min": 1,
+        "max": 10,
+        "labels": {
+          "1": "not effective",
+          "5": "somewhat effective",
           "10": "very effective"
         }
       },
       "allow_text": true,
-      "text_placeholder": "Any suggestions for improvement?",
-      "number": 2
-    },
-    {
-      "id": "home-meal-ideas",
-      "type": "scale",
-      "category": "felix_review",
-      "emoji": "\ud83c\udf7d\ufe0f",
-      "label": "Meal suggestion usefulness",
-      "question": "Home provided a list of finger food ideas for a 14-month-old, including easy wins and slightly more effort options. How useful do you find these meal suggestions?",
-      "scale": {
-        "min": 1,
-        "max": 10,
-        "labels": {
-          "1": "not useful",
-          "5": "somewhat useful",
-          "10": "very useful"
-        }
-      },
-      "allow_text": true,
-      "text_placeholder": "What did you like or dislike?",
+      "text_placeholder": "What other strategies could work?",
       "number": 3
     },
     {
-      "id": "personal-vygo-headspace",
+      "id": "personal-f1-take",
       "type": "scale",
       "category": "joel_modeling",
-      "emoji": "\ud83e\udde0",
-      "label": "Where your head's at",
-      "question": "Right now \u2014 is Vygo taking up more or less mental space than it was 6 months ago?",
+      "emoji": "\ud83c\udfce\ufe0f",
+      "label": "Hot take test",
+      "question": "Since you follow F1 \u2014 hot take: is Max Verstappen boring for the sport, or exactly what it needs?",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "way less",
-          "5": "about the same",
-          "10": "way more"
+          "1": "boring, sport suffers",
+          "5": "neutral",
+          "10": "great for the sport"
         }
       },
       "allow_text": true,
-      "text_placeholder": "What's driving that shift?",
+      "text_placeholder": "Your actual take",
       "number": 4
     },
     {
-      "id": "writing-length-instinct",
+      "id": "writing-ab-opener",
       "type": "scale",
       "category": "writing_style",
-      "emoji": "\ud83d\udccf",
-      "label": "Short vs complete",
-      "question": "Someone asks a complex question. Instinct \u2014 give them the short version now, or take the time to write it out properly?",
+      "emoji": "\u270d\ufe0f",
+      "label": "Which opener is you?",
+      "question": "A or B \u2014 which sounds more like you?\n\nA: \"Hey Mark, still keen on the proposal?\"\n\nB: \"Hi Mark, I wanted to circle back and check where things landed.\"",
       "scale": {
         "min": 1,
         "max": 10,
         "labels": {
-          "1": "short version, ask follow-ups",
-          "5": "depends",
-          "10": "write it out properly"
+          "1": "100% A",
+          "5": "either works",
+          "10": "100% B"
         }
       },
       "allow_text": true,
-      "text_placeholder": "What flips you to the other mode?",
+      "text_placeholder": "How would you actually write it?",
       "number": 5
     }
   ],
